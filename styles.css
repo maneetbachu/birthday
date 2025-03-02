@@ -53,44 +53,25 @@ h1 span{
 
 h1 span:nth-child(1)
 {
-    animation-delay: 0.5s;
+    animation-delay: 0.6s;
 }
 h1 span:nth-child(2)
 {
-    animation-delay: 0.7s;
+    animation-delay: 1.3s;
 }
 h1 span:nth-child(3)
 {
-    animation-delay: 1s;
+    animation-delay: 2.1s;
 }
 h1 span:nth-child(4)
 {
-    animation-delay: 1.3s;
+    animation-delay: 2.6s;
 }
 h1 span:nth-child(5)
 {
-    animation-delay: 1.5s;
+    animation-delay: 3.2s;
 }
-h1 span:nth-child(6)
-{
-    animation-delay: 1.8s;
-}
-h1 span:nth-child(7)
-{
-    animation-delay: 2.1s;
-}
-h1 span:nth-child(8)
-{
-    animation-delay: 2.4s;
-}
-h1 span:nth-child(9)
-{
-    animation-delay: 2.7s;
-}
-h1 span:nth-child(10)
-{
-    animation-delay: 3s;
-}
+
 .message {
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-size: 1.5em;
