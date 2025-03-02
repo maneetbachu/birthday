@@ -1,0 +1,145 @@
+
+/* Updated Styles for Birthday Pages */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: linear-gradient(to right, #ff758c, #ff7eb3, #ffa0c1, #ffccd5);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    color: white;
+    position: relative;
+}
+
+
+.container {
+    text-align: center;
+    position: relative;
+    z-index: 10;
+    animation: fadeIn 2s ease-out;
+}
+
+h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3em;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    animation: slideIn 2s ease-out;
+}
+
+.message {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5em;
+    max-width: 850px;
+    margin: 20px auto;
+    letter-spacing: 1.5px;
+    line-height: 1.5;
+    font-style:italic;
+}
+
+/* Heart Animation - Now properly in the background */
+.heart {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 50, 50);
+    transform: rotate(-45deg);
+    z-index: -1;
+    animation: heartBeat 1s infinite;
+    transform-origin: center;
+    margin-top: -50px;
+    margin-left: -50px;
+}
+
+.heart::before, .heart::after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 50, 50);
+    border-radius: 50%;
+}
+
+.heart::before {
+    top: -50px;
+    left: 0;
+}
+
+.heart::after {
+    left: 50px;
+    top: 0;
+}
+@keyframes heartBeat {
+    0% { transform: scale(1) rotate(-45deg); }
+    50% { transform: scale(1.2) rotate(-45deg); }
+    100% { transform: scale(1) rotate(-45deg); }
+}
+.flower {
+    position: fixed;
+    top: -50px; /* Start above screen */
+    font-size: 30px;
+    color: pink; /* Change color if needed */
+    opacity: 0.8;
+    user-select: none;
+    pointer-events: none;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+}
+
+.second-page .image-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 30px;
+    flex-wrap:wrap;
+    transform: rotate(-2deg);
+}
+
+.second-page .image-gallery img {
+    width: 300px;
+    height: 300px;
+    border-radius: 40%;
+    object-fit: cover;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+    filter: brightness(50%);
+}
+
+.second-page .image-gallery img:hover {
+    transform: scale(1.1) rotate(3deg);
+    filter: brightness(100%);
+}
+.button a {
+    text-decoration: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    background: #ff6b6b;
+    color: white;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.button a:hover {
+    background: #fff;
+    color: #ff6b6b;
+    transform: scale(1.1);
+}
