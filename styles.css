@@ -28,7 +28,7 @@ body {
 
 h1 {
     font-family: 'Bradley Hand',cursive;
-    font-size: 3em;
+    font-size: 6em;
     margin-bottom: 20px;
     letter-spacing: 2px;
     animation: slideIn 2s ease-out;
